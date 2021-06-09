@@ -1,0 +1,7 @@
+<div class="tasks">
+  <app-task
+    *ngFor="let task of tasks$ | async; trackBy: trackById"
+    [task]="task"
+    class="test"
+  ></app-task>
+</div>
